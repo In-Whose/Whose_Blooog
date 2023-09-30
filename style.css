@@ -1,0 +1,32 @@
+#header {
+	width: 900px;
+	margin: 0 auto;
+	
+	height: 250px;
+	position: relative;
+}
+
+#title {
+    text-align: center;
+    line-height: 200px;
+	font-size : 60px;
+	font-family: 'Pixelify Sans', cursive;
+}
+
+#sns {
+	position: absolute;
+	right: 0; bottom : 0;
+}
+#sns > ul { overflow: hidden; }
+#sns > ul > li { float: left; }
+#sns > ul > li > a {
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid black;
+}
+#sns > ul > li > a:hover {
+	background-color: black;
+	color: white;
+}
+#sns > ul > li:first-child > a {border-radius: 10px 0 0 10px; }
+#sns > ul > li:last-child > a {border-radius: 0 10px 10px 0; }
