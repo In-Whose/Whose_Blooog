@@ -4,7 +4,8 @@
 		<title>main</title>
 		<meta charset="utf-8">
 		<style>
-		  @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&display=swap');
+  			@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 		</style>
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
@@ -28,11 +29,13 @@
 			<aside id="aside"> 
 				<input id="first" type="radio" name="tab" checked />
 				<input id="second" type="radio" name="tab" />
+				<div id="catalog">카테고리</div>
 				<section class="buttons">
 					<label for="first">Develop</label>
 					<label for="second">Life</label>
 				</section>
-				<div id="tab_item1">
+				<!-- class="item"을하고 css에서 color="gray"로 하려했으나 a태그가 더 안쪽에 있으므로 a태그의 색상으로 적용된다 -->
+				<div id="tab_item1"> 
 					<ul>
 						<li><a href="#">Web</a></li>
 						<li><a href="#">PS</a></li>

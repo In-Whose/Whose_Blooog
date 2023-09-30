@@ -47,8 +47,10 @@
 
 #aside {
 	padding-top: 20px;
+	padding-left: 5px;
 	width: 200px;
 	float: left;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -62,10 +64,33 @@
 	padding-left: 5px;
 }
 
+.item {
+	color: gray;
+	
+}
+.item:hover {
+	color: darkgray;
+}
+.item:visited {
+	color: gray;
+}
+
 #first, #second {display: none;}
 #tab_item1, #tab_item2 {display: none;}
-#first:checked ~ #tab_item1, #second:checked ~ #tab_item2 {display: block;}
+#first:checked ~ #tab_item1, #second:checked ~ #tab_item2 {display: block;
+color: gray; !important}
+#first:checked ~ #tab_item1:visited, #second:checked ~ #tab_item2:visited {
+	color:gray; !important
+}
 
+
+#catalog {
+	width:200px; height: 30px;
+	box-sizing: border-box;
+	text-align: center;
+	lineheight: 26px;
+	margin-bottom: 10px;
+}
 .buttons {overflow: hidden;}
 .buttons > label {
 	display: block;
@@ -79,8 +104,6 @@
 	
 	background: white;
 	color: black;
-	
-
 }
 
 #first:checked ~ .buttons > label:nth-of-type(1),
