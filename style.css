@@ -7,6 +7,7 @@
 	height: 270px;
 	position: relative;
 	padding-bottom: 20px;
+	background-image: url('code.jpg');
 }
 
 #title {
@@ -14,6 +15,7 @@
     line-height: 200px;
 	font-size : 60px;
 	font-family: 'Pixelify Sans', cursive;
+	color: white;
 }
 
 #sns {
@@ -26,6 +28,7 @@
 	display: block;
 	padding: 5px 10px;
 	border: 1px solid black;
+	background-color: white;
 }
 #sns > ul > li > a:hover {
 	background-color: black;
@@ -42,6 +45,7 @@
 	overflow: hidden;
 	
 	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 
 }
 
@@ -56,6 +60,7 @@
 
 #div {
 	width: 690px;
+	min-height: 610px;
 	float: right;
 	border-left: 1px solid black;
 }
@@ -64,33 +69,34 @@
 	padding-left: 5px;
 }
 
-.item {
-	color: gray;
-	
+a, a:visited {
+	color: dimgray;
 }
-.item:hover {
-	color: darkgray;
+a:hover {
+	color: slategray;
 }
-.item:visited {
-	color: gray;
-}
+
 
 #first, #second {display: none;}
 #tab_item1, #tab_item2 {display: none;}
-#first:checked ~ #tab_item1, #second:checked ~ #tab_item2 {display: block;
-color: gray; !important}
-#first:checked ~ #tab_item1:visited, #second:checked ~ #tab_item2:visited {
-	color:gray; !important
-}
-
+#first:checked ~ #tab_item1, #second:checked ~ #tab_item2 {display: block;}
 
 #catalog {
 	width:200px; height: 30px;
 	box-sizing: border-box;
 	text-align: center;
-	lineheight: 26px;
+	line-height: 26px;
 	margin-bottom: 10px;
 }
+
+.item:nth-of-type(1) {
+	border-top: 10px;
+}
+.item {
+	padding-left : 10px;
+	margin-top: 5px;
+}
+
 .buttons {overflow: hidden;}
 .buttons > label {
 	display: block;
@@ -108,7 +114,6 @@ color: gray; !important}
 
 #first:checked ~ .buttons > label:nth-of-type(1),
 #second:checked ~ .buttons > label:nth-of-type(2) {
-
 	background: black;
 	color: white;
 }
