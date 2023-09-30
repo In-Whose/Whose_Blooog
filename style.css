@@ -1,9 +1,12 @@
+/* header */
+
 #header {
 	width: 900px;
 	margin: 0 auto;
 	
-	height: 250px;
+	height: 270px;
 	position: relative;
+	padding-bottom: 20px;
 }
 
 #title {
@@ -15,7 +18,7 @@
 
 #sns {
 	position: absolute;
-	right: 0; bottom : 0;
+	right: 0; bottom : 20px;
 }
 #sns > ul { overflow: hidden; }
 #sns > ul > li { float: left; }
@@ -30,3 +33,59 @@
 }
 #sns > ul > li:first-child > a {border-radius: 10px 0 0 10px; }
 #sns > ul > li:last-child > a {border-radius: 0 10px 10px 0; }
+
+/* content */
+
+#content {
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	border-top: 1px solid black;
+
+}
+
+#aside {
+	padding-top: 20px;
+	width: 200px;
+	float: left;
+}
+
+
+#div {
+	width: 690px;
+	float: right;
+	border-left: 1px solid black;
+}
+#section {
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+#first, #second {display: none;}
+#tab_item1, #tab_item2 {display: none;}
+#first:checked ~ #tab_item1, #second:checked ~ #tab_item2 {display: block;}
+
+.buttons {overflow: hidden;}
+.buttons > label {
+	display: block;
+	float: left;
+	
+	width: 100px; height: 30px;
+	line-height: 26px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid black;
+	
+	background: white;
+	color: black;
+	
+
+}
+
+#first:checked ~ .buttons > label:nth-of-type(1),
+#second:checked ~ .buttons > label:nth-of-type(2) {
+
+	background: black;
+	color: white;
+}
