@@ -13,9 +13,13 @@
 #title {
     text-align: center;
     line-height: 200px;
+
+}
+
+.title {
 	font-size : 60px;
 	font-family: 'Pixelify Sans', cursive;
-	color: white;
+	color: white;	
 }
 
 #sns {
